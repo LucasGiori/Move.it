@@ -18,7 +18,7 @@ interface CountdownProviderProps {
 export const CountdownContext = createContext({} as CountdownContextData);
 
 const UM_MINUTO_EM_SEGUNDOS = 60;
-const VINTE_CINCO_MINUTO_EM_SEGUNDOS = 0.3 * UM_MINUTO_EM_SEGUNDOS;
+const VINTE_CINCO_MINUTO_EM_SEGUNDOS = 25 * UM_MINUTO_EM_SEGUNDOS;
 let countdownTimeout: NodeJS.Timeout;
 
 export function CountdownProvider({ children }) {
